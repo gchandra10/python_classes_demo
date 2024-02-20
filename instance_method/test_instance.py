@@ -1,6 +1,7 @@
 import unittest
 from MathClasses import SimpleOps, ComplexOps
 
+
 class TestSimpleOps(unittest.TestCase):
     def setUp(self):
         self.simple_ops = SimpleOps()
@@ -24,6 +25,7 @@ class TestSimpleOps(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.simple_ops.divide()
 
+
 class TestComplexOps(unittest.TestCase):
     def setUp(self):
         self.complex_ops = ComplexOps()
@@ -38,7 +40,10 @@ class TestComplexOps(unittest.TestCase):
 
     def test_std_deviation(self):
         self.complex_ops.set_data([10, 12, 23, 23, 16])
-        self.assertAlmostEqual(self.complex_ops.std_deviation(), 6.058052492344384)  # Example std deviation
+        self.assertAlmostEqual(
+            self.complex_ops.std_deviation(), 6.058052492344384
+        )  # Example std deviation
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()
