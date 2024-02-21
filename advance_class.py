@@ -1,3 +1,5 @@
+## Demonstrates Inheritence and Function Overriding
+
 class Animal:
     def __init__(self, name):
         self.name = name
