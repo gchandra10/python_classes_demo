@@ -1,4 +1,9 @@
 ## Demonstrates Inheritence and Function Overriding
+## Dog IS A Animal
+## Cat IS A Animal
+## Employee IS A Person
+## Student IS A Person
+
 
 class Animal:
     def __init__(self, name):
